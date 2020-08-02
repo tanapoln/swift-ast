@@ -65,7 +65,7 @@ public func terminalMain(
 
   for astUnit in result.astUnitCollection {
     if let sourceFile = astUnit.sourceFile {
-      printHeader(for: sourceFile.identifier)
+      // printHeader(for: sourceFile.identifier)
 
       let topLevelDecl = astUnit.translationUnit
       switch ttyType {

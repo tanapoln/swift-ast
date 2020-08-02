@@ -43,7 +43,8 @@ public extension TTYColor {
 
 public extension String {
   func colored(with color: TTYColor = .default) -> String {
-    let defaultColor = TTYColor.default.ttyCode
-    return "\(color.ttyCode)\(self)\(defaultColor)"
+    return self
+    // let defaultColor = TTYColor.default.ttyCode
+    // return "\(color.ttyCode)\(self)\(defaultColor)"
   }
 }
